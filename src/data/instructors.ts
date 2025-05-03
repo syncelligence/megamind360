@@ -1,0 +1,105 @@
+import { Instructor } from '../types';
+
+export const instructors: Instructor[] = [
+  {
+    id: '1',
+    name: 'Sarah Johnson',
+    title: 'Senior Web Developer',
+    avatar: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    bio: '10+ years of experience in web development and teaching. Passionate about helping students master coding skills.',
+    expertise: ['JavaScript', 'React', 'Node.js'],
+    rating: 4.8,
+    totalReviews: 425,
+    totalStudents: 12800,
+    totalCourses: 5,
+    social: {
+      twitter: 'https://twitter.com/sarahjohnson',
+      linkedin: 'https://linkedin.com/in/sarahjohnson',
+    },
+  },
+  {
+    id: '2',
+    name: 'Michael Chen',
+    title: 'Data Scientist',
+    avatar: 'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    bio: 'Former senior data scientist at Google with expertise in machine learning and AI. PhD in Computer Science from Stanford.',
+    expertise: ['Python', 'Machine Learning', 'Data Analysis'],
+    rating: 4.9,
+    totalReviews: 318,
+    totalStudents: 8750,
+    totalCourses: 3,
+    social: {
+      twitter: 'https://twitter.com/michaelchen',
+      linkedin: 'https://linkedin.com/in/michaelchen',
+      website: 'https://michaelchen.com',
+    },
+  },
+  {
+    id: '3',
+    name: 'Emma Rodriguez',
+    title: 'UX Design Lead',
+    avatar: 'https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    bio: 'Award-winning designer with experience at top tech companies. Passionate about creating intuitive and accessible digital experiences.',
+    expertise: ['UI Design', 'User Research', 'Figma', 'Adobe XD'],
+    rating: 4.7,
+    totalReviews: 275,
+    totalStudents: 6200,
+    totalCourses: 4,
+    social: {
+      twitter: 'https://twitter.com/emmarodriguez',
+      linkedin: 'https://linkedin.com/in/emmarodriguez',
+    },
+  },
+  {
+    id: '4',
+    name: 'David Wilson',
+    title: 'Marketing Director',
+    avatar: 'https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    bio: 'Marketing specialist with over 15 years of experience working with Fortune 500 companies and startups alike.',
+    expertise: ['SEO', 'Content Marketing', 'Social Media', 'Analytics'],
+    rating: 4.6,
+    totalReviews: 390,
+    totalStudents: 9500,
+    totalCourses: 6,
+    social: {
+      linkedin: 'https://linkedin.com/in/davidwilson',
+      website: 'https://davidwilson.com',
+    },
+  },
+  {
+    id: '5',
+    name: 'Jessica Taylor',
+    title: 'Mobile App Developer',
+    avatar: 'https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    bio: 'iOS and Android developer with a passion for creating intuitive mobile experiences. Previously led development at several startups.',
+    expertise: ['Swift', 'Kotlin', 'React Native', 'Firebase'],
+    rating: 4.7,
+    totalReviews: 210,
+    totalStudents: 5600,
+    totalCourses: 3,
+    social: {
+      twitter: 'https://twitter.com/jessicataylor',
+      linkedin: 'https://linkedin.com/in/jessicataylor',
+    },
+  },
+  {
+    id: '6',
+    name: 'Robert Kim',
+    title: 'Cybersecurity Expert',
+    avatar: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    bio: 'Certified ethical hacker and security consultant. Specializes in network security, penetration testing, and cybersecurity awareness.',
+    expertise: ['Network Security', 'Ethical Hacking', 'Security Auditing'],
+    rating: 4.8,
+    totalReviews: 175,
+    totalStudents: 4200,
+    totalCourses: 2,
+    social: {
+      linkedin: 'https://linkedin.com/in/robertkim',
+      website: 'https://robertkim-security.com',
+    },
+  },
+];
+
+export const getInstructorById = (id: string): Instructor | undefined => {
+  return instructors.find(instructor => instructor.id === id);
+};
