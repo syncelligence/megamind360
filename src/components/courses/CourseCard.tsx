@@ -63,10 +63,6 @@ const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
             <Users size={14} className="mr-1" />
             {course.enrolledStudents}
           </div>
-          
-          <div className="font-bold text-brand-secondary">
-            ${course.price}
-          </div>
         </div>
       </div>
     </Card>

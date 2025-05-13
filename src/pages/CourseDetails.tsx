@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useNavigate } from 'react-router-dom';
 import { Play, Clock, BarChart2, Users, Star, CheckCircle, ChevronDown, ChevronUp, Share2, BookmarkPlus } from 'lucide-react';
 import Button from '../components/common/Button';
 import { getCourseBySlug } from '../data/courses';
@@ -8,11 +8,16 @@ const CourseDetails: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
   const course = getCourseBySlug(slug || '');
   const [expandedModules, setExpandedModules] = useState<Set<string>>(new Set([course?.curriculum[0]?.id || '']));
+  const navigate = useNavigate();
+
+  const handleEnrollClick = () => {
+    navigate('/contact');
+  };
 
   if (!course) {
     return (
       <div className="pt-20 container-custom py-16 text-center">
-        <h2 className="text-2xl font-bold mb-4">Course Not Found</h2>
+        <h2 className="text-2xl font-bold mb-4 text-gray-900">Course Not Found</h2>
         <p className="mb-6">The course you're looking for doesn't exist or has been removed.</p>
         <Link to="/courses" className="btn-primary">
           Browse All Courses
@@ -53,7 +58,7 @@ const CourseDetails: React.FC = () => {
                 <span className="text-gray-400 text-sm">{course.category}</span>
               </div>
               
-              <h1 className="text-3xl md:text-4xl font-bold mb-4">{course.title}</h1>
+              <h1 className="text-3xl md:text-4xl font-bold mb-4 text-white">{course.title}</h1>
               
               <p className="text-gray-300 mb-6">
                 {course.description}
@@ -97,7 +102,7 @@ const CourseDetails: React.FC = () => {
               </div>
               
               <div className="flex flex-wrap gap-3">
-                <Button size="lg">
+                <Button size="lg" onClick={handleEnrollClick}>
                   Enroll Now
                 </Button>
                 
@@ -131,7 +136,7 @@ const CourseDetails: React.FC = () => {
           <div className="lg:col-span-2">
             {/* Course overview */}
             <div className="bg-white rounded-xl shadow-sm p-6 mb-8">
-              <h2 className="text-2xl font-bold mb-4">What You'll Learn</h2>
+              <h2 className="text-2xl font-bold mb-4 text-gray-900">What You'll Learn</h2>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-6">
                 {course.topics.map((topic, index) => (
@@ -156,7 +161,7 @@ const CourseDetails: React.FC = () => {
             
             {/* Course curriculum */}
             <div className="bg-white rounded-xl shadow-sm p-6 mb-8">
-              <h2 className="text-2xl font-bold mb-2">Course Curriculum</h2>
+              <h2 className="text-2xl font-bold mb-2 text-gray-900">Course Curriculum</h2>
               <div className="flex items-center text-gray-600 mb-6">
                 <span className="mr-4">
                   <Clock size={16} className="inline mr-1" />
@@ -228,13 +233,7 @@ const CourseDetails: React.FC = () => {
           {/* Sidebar */}
           <div className="lg:col-span-1">
             <div className="bg-white rounded-xl shadow-sm p-6 sticky top-24">
-              <div className="mb-4">
-                <div className="text-3xl font-bold mb-2 text-brand-secondary">
-                  ${course.price}
-                </div>
-              </div>
-              
-              <Button fullWidth size="lg" className="mb-3">
+              <Button fullWidth size="lg" className="mb-3" onClick={handleEnrollClick}>
                 Enroll Now
               </Button>
               
@@ -261,6 +260,11 @@ const CourseDetails: React.FC = () => {
                 <div className="flex justify-between py-2 border-b border-gray-100">
                   <span className="text-gray-600">Language</span>
                   <span className="font-medium">English</span>
+                </div>
+
+                <div className="flex justify-between py-2 border-b border-gray-100">
+                  <span className="text-gray-600">Mode of Teaching</span>
+                  <span className="font-medium">{course.teachingMode || 'Online'}</span>
                 </div>
               </div>
               

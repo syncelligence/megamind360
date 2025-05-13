@@ -39,7 +39,7 @@ const Features: React.FC = () => {
     <section className="section bg-gray-50">
       <div className="container-custom">
         <div className="section-title">
-          <h2 className="mb-3">Why Choose Megamind360</h2>
+          <h2 className="mb-3 text-gray-900">Why Choose Megamind360</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Our platform offers unique advantages to ensure an effective and enjoyable learning experience
           </p>
@@ -54,7 +54,7 @@ const Features: React.FC = () => {
               <div className="w-12 h-12 bg-brand-primary/10 rounded-lg flex items-center justify-center mb-4">
                 {feature.icon}
               </div>
-              <h3 className="text-lg font-bold mb-2">{feature.title}</h3>
+              <h3 className="text-lg font-bold mb-2 text-gray-900">{feature.title}</h3>
               <p className="text-gray-600">{feature.description}</p>
             </div>
           ))}

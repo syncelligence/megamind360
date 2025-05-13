@@ -66,7 +66,7 @@ const CategorySection: React.FC = () => {
     <section className="section bg-white">
       <div className="container-custom">
         <div className="section-title">
-          <h2 className="mb-3">Browse Top Categories</h2>
+          <h2 className="mb-3 text-gray-900">Browse Top Categories</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Explore our wide range of courses across different categories tailored to your interests and career goals
           </p>
@@ -83,7 +83,7 @@ const CategorySection: React.FC = () => {
                 <div className={`${category.color} w-14 h-14 rounded-lg flex items-center justify-center mx-auto mb-4 transition-transform group-hover:scale-110`}>
                   {category.icon}
                 </div>
-                <h3 className="font-semibold mb-1 group-hover:text-brand-primary transition-colors">
+                <h3 className="font-semibold mb-1 text-gray-900 group-hover:text-brand-primary transition-colors">
                   {category.name}
                 </h3>
                 <p className="text-sm text-gray-500">{category.count} courses</p>

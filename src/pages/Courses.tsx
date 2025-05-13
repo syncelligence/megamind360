@@ -50,30 +50,48 @@ const Courses: React.FC = () => {
       result = result.filter(course => course.category === filters.category);
     }
     
-    // Filter by level
+    // Filter by level - Improved to handle different level formats
     if (filters.level) {
-      result = result.filter(course => course.level === filters.level);
+      result = result.filter(course => {
+        // If level is an array, check if it includes the filter level
+        if (Array.isArray(course.level)) {
+          return course.level.includes(filters.level);
+        }
+        // Handle compound levels like 'Beginner-Intermediate'
+        if (typeof course.level === 'string' && course.level.includes('-')) {
+          return course.level.includes(filters.level);
+        }
+        // Direct comparison
+        return course.level === filters.level;
+      });
     }
     
     // Filter by price range
-    result = result.filter(
-      course => 
-        course.price >= filters.priceRange[0] && 
-        course.price <= filters.priceRange[1]
-    );
+    if (filters.priceRange && Array.isArray(filters.priceRange) && filters.priceRange.length === 2) {
+      result = result.filter(
+        course => 
+          course.price >= filters.priceRange[0] && 
+          course.price <= filters.priceRange[1]
+      );
+    }
     
     setFilteredCourses(result);
   };
 
   const handleFilterChange = (newFilters: any) => {
-    setFilters(newFilters);
+    // Preserve the price range when other filters are updated
+    setFilters(prevFilters => ({
+      ...prevFilters,
+      ...newFilters,
+      priceRange: prevFilters.priceRange, // Keep the existing price range
+    }));
   };
 
   return (
     <div className="pt-20">
       <div className="bg-gray-50 py-12">
         <div className="container-custom">
-          <h1 className="text-3xl md:text-4xl font-bold mb-4">Courses</h1>
+          <h1 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Courses</h1>
           <p className="text-gray-600 max-w-2xl">
             Explore our wide range of courses designed to help you achieve your goals. From beginners to advanced, we have something for everyone.
           </p>
@@ -94,7 +112,7 @@ const Courses: React.FC = () => {
           </>
         ) : (
           <div className="text-center py-16">
-            <h3 className="text-xl font-bold mb-2">No courses found</h3>
+            <h3 className="text-xl font-bold mb-2 text-gray-900">No courses found</h3>
             <p className="text-gray-600">Try adjusting your filters to find what you're looking for.</p>
           </div>
         )}

@@ -17,7 +17,7 @@ const HeroSection: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="animate-fade-in-up">
             <h5 className="text-brand-secondary font-semibold mb-4">Expand Your Knowledge</h5>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-gray-900">
               Learn Without <span className="text-brand-primary">Limits</span>
             </h1>
             <p className="text-lg text-gray-600 mb-8 max-w-lg">

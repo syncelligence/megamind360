@@ -9,7 +9,7 @@ const Contact: React.FC = () => {
       <section className="bg-gray-900 text-white py-16">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Contact Us</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">Contact Us</h1>
             <p className="text-lg text-gray-300">
               Have questions or feedback? We're here to help.
               Reach out to our team and we'll get back to you shortly.
@@ -24,7 +24,7 @@ const Contact: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Information */}
             <div>
-              <h2 className="text-2xl font-bold mb-6">Get In Touch</h2>
+              <h2 className="text-2xl font-bold mb-6 text-gray-900">Get In Touch</h2>
               
               <div className="space-y-6 mb-8">
                 <div className="flex items-start">
@@ -32,7 +32,7 @@ const Contact: React.FC = () => {
                     <MapPin size={24} />
                   </div>
                   <div>
-                    <h3 className="font-semibold mb-1">Our Location</h3>
+                    <h3 className="font-semibold mb-1 text-gray-900">Our Location</h3>
                     <p className="text-gray-600">
                       123 Learning Street<br />
                       Education City, 10001<br />
@@ -46,7 +46,7 @@ const Contact: React.FC = () => {
                     <Mail size={24} />
                   </div>
                   <div>
-                    <h3 className="font-semibold mb-1">Email Us</h3>
+                    <h3 className="font-semibold mb-1 text-gray-900">Email Us</h3>
                     <p className="text-gray-600">
                       <a href="mailto:info@megamind360.com" className="hover:text-brand-primary transition-colors">
                         info@megamind360.com
@@ -63,7 +63,7 @@ const Contact: React.FC = () => {
                     <Phone size={24} />
                   </div>
                   <div>
-                    <h3 className="font-semibold mb-1">Call Us</h3>
+                    <h3 className="font-semibold mb-1 text-gray-900">Call Us</h3>
                     <p className="text-gray-600">
                       <a href="tel:+11234567890" className="hover:text-brand-primary transition-colors">
                         +1 (123) 456-7890
@@ -78,7 +78,7 @@ const Contact: React.FC = () => {
                     <MessageSquare size={24} />
                   </div>
                   <div>
-                    <h3 className="font-semibold mb-1">Live Chat</h3>
+                    <h3 className="font-semibold mb-1 text-gray-900">Live Chat</h3>
                     <p className="text-gray-600">
                       Chat with our support team in real-time.
                       <br />
@@ -91,7 +91,7 @@ const Contact: React.FC = () => {
               </div>
               
               <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="font-bold mb-3">Office Hours</h3>
+                <h3 className="font-bold mb-3 text-gray-900">Office Hours</h3>
                 <table className="w-full text-gray-600">
                   <tbody>
                     <tr>
@@ -113,7 +113,7 @@ const Contact: React.FC = () => {
             
             {/* Contact Form */}
             <div className="bg-white rounded-xl shadow-lg p-8">
-              <h2 className="text-2xl font-bold mb-6">Send us a Message</h2>
+              <h2 className="text-2xl font-bold mb-6 text-gray-900">Send us a Message</h2>
               
               <form>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
@@ -237,7 +237,7 @@ const Contact: React.FC = () => {
       {/* FAQ */}
       <section className="py-16 bg-gray-50">
         <div className="container-custom">
-          <h2 className="text-3xl font-bold mb-12 text-center">Frequently Asked Questions</h2>
+          <h2 className="text-3xl font-bold mb-12 text-center text-gray-900">Frequently Asked Questions</h2>
           
           <div className="max-w-3xl mx-auto space-y-6">
             {[
@@ -263,7 +263,7 @@ const Contact: React.FC = () => {
               },
             ].map((faq, index) => (
               <div key={index} className="bg-white p-6 rounded-lg shadow-sm">
-                <h3 className="text-lg font-bold mb-2">{faq.question}</h3>
+                <h3 className="text-lg font-bold mb-2 text-gray-900">{faq.question}</h3>
                 <p className="text-gray-600">{faq.answer}</p>
               </div>
             ))}

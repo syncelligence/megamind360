@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Search, Filter, X } from 'lucide-react';
 import Button from '../common/Button';
 
@@ -8,9 +8,8 @@ interface CourseFiltersProps {
 
 const CourseFilters: React.FC<CourseFiltersProps> = ({ onFilterChange }) => {
   const [searchTerm, setSearchTerm] = useState('');
-  const [selectedCategory, setSelectedCategory] = useState('');
-  const [selectedLevel, setSelectedLevel] = useState('');
-  const [priceRange, setPriceRange] = useState<[number, number]>([0, 200]);
+  const [selectedCategory, setSelectedCategory] = useState('All Categories');
+  const [selectedLevel, setSelectedLevel] = useState('All Levels');
   const [showMobileFilters, setShowMobileFilters] = useState(false);
 
   const categories = [
@@ -27,6 +26,11 @@ const CourseFilters: React.FC<CourseFiltersProps> = ({ onFilterChange }) => {
 
   const levels = ['All Levels', 'Beginner', 'Intermediate', 'Advanced'];
 
+  useEffect(() => {
+    // Apply initial filters when component mounts
+    applyFilters();
+  }, []);
+
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
     applyFilters();
@@ -37,7 +41,6 @@ const CourseFilters: React.FC<CourseFiltersProps> = ({ onFilterChange }) => {
       searchTerm,
       category: selectedCategory === 'All Categories' ? '' : selectedCategory,
       level: selectedLevel === 'All Levels' ? '' : selectedLevel,
-      priceRange,
     });
   };
 
@@ -45,12 +48,10 @@ const CourseFilters: React.FC<CourseFiltersProps> = ({ onFilterChange }) => {
     setSearchTerm('');
     setSelectedCategory('All Categories');
     setSelectedLevel('All Levels');
-    setPriceRange([0, 200]);
     onFilterChange({
       searchTerm: '',
       category: '',
       level: '',
-      priceRange: [0, 200],
     });
   };
 
@@ -90,7 +91,9 @@ const CourseFilters: React.FC<CourseFiltersProps> = ({ onFilterChange }) => {
           <div className="hidden lg:flex items-center gap-4">
             <select
               value={selectedCategory}
-              onChange={(e) => setSelectedCategory(e.target.value)}
+              onChange={(e) => {
+                setSelectedCategory(e.target.value);
+              }}
               className="pl-4 pr-8 py-2.5 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-primary focus:border-transparent"
             >
               {categories.map((category) => (
@@ -102,7 +105,9 @@ const CourseFilters: React.FC<CourseFiltersProps> = ({ onFilterChange }) => {
 
             <select
               value={selectedLevel}
-              onChange={(e) => setSelectedLevel(e.target.value)}
+              onChange={(e) => {
+                setSelectedLevel(e.target.value);
+              }}
               className="pl-4 pr-8 py-2.5 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-primary focus:border-transparent"
             >
               {levels.map((level) => (
@@ -180,21 +185,6 @@ const CourseFilters: React.FC<CourseFiltersProps> = ({ onFilterChange }) => {
                   </option>
                 ))}
               </select>
-            </div>
-
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                Price Range: ${priceRange[0]} - ${priceRange[1]}
-              </label>
-              <input
-                type="range"
-                min="0"
-                max="200"
-                step="10"
-                value={priceRange[1]}
-                onChange={(e) => setPriceRange([priceRange[0], parseInt(e.target.value)])}
-                className="w-full"
-              />
             </div>
 
             <div className="pt-4 flex gap-3">

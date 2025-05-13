@@ -13,7 +13,7 @@ const FeaturedCourses: React.FC = () => {
     <section className="section bg-gray-50">
       <div className="container-custom">
         <div className="section-title">
-          <h2 className="mb-3">Featured Courses</h2>
+          <h2 className="mb-3 text-gray-900">Featured Courses</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Explore our most popular courses with high student satisfaction. Start your learning journey today.
           </p>
