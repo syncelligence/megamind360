@@ -8,7 +8,7 @@ const Instructors: React.FC = () => {
     <div className="pt-20">
       <div className="bg-gray-50 py-12">
         <div className="container-custom">
-          <h1 className="text-3xl md:text-4xl font-bold mb-4">Our Instructors</h1>
+          <h1 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Our Instructors</h1>
           <p className="text-gray-600 max-w-2xl">
             Learn from our expert instructors with years of industry experience.
             Our team is dedicated to helping you master new skills.
@@ -18,7 +18,7 @@ const Instructors: React.FC = () => {
       
       <div className="container-custom py-10">
         <div className="flex justify-between items-center mb-8">
-          <div className="text-lg font-medium">
+          <div className="text-lg font-medium text-gray-900">
             Showing {instructors.length} instructors
           </div>
           

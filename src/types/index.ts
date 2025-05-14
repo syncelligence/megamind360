@@ -3,7 +3,7 @@ export interface Course {
   title: string;
   slug: string;
   category: string;
-  level: 'Beginner' | 'Intermediate' | 'Advanced';
+  level: string | string[] | 'Beginner' | 'Intermediate' | 'Advanced' | 'Beginner-Intermediate' | 'Beginner-Advanced' | 'Beginner-Expert';
   description: string;
   thumbnail: string;
   instructor: Instructor;
@@ -15,6 +15,7 @@ export interface Course {
   featured: boolean;
   topics: string[];
   curriculum: Module[];
+  teachingMode?: string;
 }
 
 export interface Module {
@@ -28,8 +29,9 @@ export interface Lesson {
   id: string;
   title: string;
   duration: string;
-  type: 'Video' | 'Quiz' | 'Assignment';
+  type: 'Video' | 'Quiz' | 'Assignment' | 'Project' | 'Hands-on';
   completed?: boolean;
+  topics?: string[];
 }
 
 export interface Instructor {

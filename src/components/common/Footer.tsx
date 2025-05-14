@@ -45,7 +45,7 @@ const Footer: React.FC = () => {
 
           {/* Quick Links */}
           <div>
-            <h5 className="font-bold text-lg mb-6">Quick Links</h5>
+            <h5 className="font-bold text-lg mb-6 text-white">Quick Links</h5>
             <ul className="space-y-3">
               <li>
                 <Link to="/courses" className="text-gray-400 hover:text-brand-primary transition-colors">
@@ -77,7 +77,7 @@ const Footer: React.FC = () => {
 
           {/* Support */}
           <div>
-            <h5 className="font-bold text-lg mb-6">Support</h5>
+            <h5 className="font-bold text-lg mb-6 text-white">Support</h5>
             <ul className="space-y-3">
               <li>
                 <Link to="/help" className="text-gray-400 hover:text-brand-primary transition-colors">
@@ -109,7 +109,7 @@ const Footer: React.FC = () => {
 
           {/* Contact */}
           <div>
-            <h5 className="font-bold text-lg mb-6">Contact Us</h5>
+            <h5 className="font-bold text-lg mb-6 text-white">Contact Us</h5>
             <ul className="space-y-4">
               <li className="flex items-start space-x-3">
                 <MapPin size={20} className="text-brand-primary flex-shrink-0 mt-1" />

@@ -15,7 +15,7 @@ const About: React.FC = () => {
       <section className="bg-gray-900 text-white py-16 md:py-24">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">About Megamind360</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">About Megamind360</h1>
             <p className="text-lg text-gray-300 mb-8">
               We're on a mission to transform education and make quality learning accessible to everyone.
             </p>
@@ -28,7 +28,7 @@ const About: React.FC = () => {
         <div className="container-custom">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold mb-6">Our Vision & Mission</h2>
+              <h2 className="text-3xl font-bold mb-6 text-gray-900">Our Vision & Mission</h2>
               
               <div className="mb-8">
                 <div className="flex items-start mb-4">
@@ -36,7 +36,7 @@ const About: React.FC = () => {
                     <Target className="text-brand-primary" size={24} />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold mb-2">Our Vision</h3>
+                    <h3 className="text-xl font-bold mb-2 text-gray-900">Our Vision</h3>
                     <p className="text-gray-600">
                       To create a world where anyone, anywhere has access to high-quality education that empowers them to transform their lives.
                     </p>
@@ -48,7 +48,7 @@ const About: React.FC = () => {
                     <TrendingUp className="text-brand-secondary" size={24} />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold mb-2">Our Mission</h3>
+                    <h3 className="text-xl font-bold mb-2 text-gray-900">Our Mission</h3>
                     <p className="text-gray-600">
                       To provide accessible, affordable, and engaging educational content created by industry experts, that helps learners develop skills for both personal and professional growth.
                     </p>
@@ -78,7 +78,7 @@ const About: React.FC = () => {
                 <div className="w-12 h-12 mx-auto mb-4 bg-gray-100 rounded-full flex items-center justify-center">
                   {stat.icon}
                 </div>
-                <div className="text-3xl font-bold mb-1">{stat.value}</div>
+                <div className="text-3xl font-bold mb-1 text-gray-900">{stat.value}</div>
                 <div className="text-gray-600">{stat.label}</div>
               </div>
             ))}
@@ -90,7 +90,7 @@ const About: React.FC = () => {
       <section className="py-16 bg-white">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6 text-center">Our Story</h2>
+            <h2 className="text-3xl font-bold mb-6 text-center text-gray-900">Our Story</h2>
             
             <div className="space-y-6 text-gray-700">
               <p>
@@ -116,7 +116,7 @@ const About: React.FC = () => {
       {/* Team */}
       <section className="py-16 bg-gray-50">
         <div className="container-custom">
-          <h2 className="text-3xl font-bold mb-12 text-center">Our Leadership Team</h2>
+          <h2 className="text-3xl font-bold mb-12 text-center text-gray-900">Our Leadership Team</h2>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
@@ -148,7 +148,7 @@ const About: React.FC = () => {
                   className="w-full h-64 object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-1">{member.name}</h3>
+                  <h3 className="text-xl font-bold mb-1 text-gray-900">{member.name}</h3>
                   <p className="text-brand-secondary">{member.position}</p>
                 </div>
               </div>

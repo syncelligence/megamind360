@@ -25,7 +25,7 @@ const SuccessStories: React.FC = () => {
 
       <div className="container-custom relative">
         <div className="section-title">
-          <h2 className="mb-3">Success Stories</h2>
+          <h2 className="mb-3 text-gray-900">Success Stories</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Hear from our students who transformed their careers through our courses.
           </p>
@@ -53,7 +53,7 @@ const SuccessStories: React.FC = () => {
                 </p>
 
                 <div>
-                  <h4 className="font-bold text-lg">
+                  <h4 className="font-bold text-lg text-gray-900">
                     {successStories[currentIndex].name}
                   </h4>
                   <p className="text-brand-secondary font-medium">
