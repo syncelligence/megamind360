@@ -8,10 +8,12 @@ import Instructors from './pages/Instructors';
 import InstructorDetails from './pages/InstructorDetails';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import ScrollToTop from './ScrollToTop';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <MainLayout>
         <Routes>
           <Route path="/" element={<Home />} />

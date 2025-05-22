@@ -13,7 +13,7 @@ export const courses: Course[] = [
       "https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     instructor: {
       id: "7",
-      name: "Ashwin Jiwane",
+      name: "Ashwin",
       title: "Data Scientist",
       avatar:
         "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
@@ -219,7 +219,7 @@ export const courses: Course[] = [
       "https://images.pexels.com/photos/196645/pexels-photo-196645.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     instructor: {
       id: "3",
-      name: "Emma Rodriguez",
+      name: "Emma",
       title: "UX Design Lead",
       avatar:
         "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
@@ -326,7 +326,7 @@ export const courses: Course[] = [
       "https://images.pexels.com/photos/34577/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     instructor: {
       id: "4",
-      name: "David Wilson",
+      name: "David",
       title: "Marketing Director",
       avatar:
         "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
@@ -433,7 +433,7 @@ export const courses: Course[] = [
       "https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     instructor: {
       id: "7",
-      name: "Ashwin Jiwane",
+      name: "Ashwin",
       title: "Data Scientist",
       avatar:
         "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
@@ -604,7 +604,7 @@ export const courses: Course[] = [
       "https://images.pexels.com/photos/574069/pexels-photo-574069.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     instructor: {
       id: "7",
-      name: "Ashwin Jiwane",
+      name: "Ashwin",
       title: "Data Scientist",
       avatar:
         "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
@@ -709,7 +709,7 @@ export const courses: Course[] = [
       "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     instructor: {
       id: "7",
-      name: "Ashwin Jiwane",
+      name: "Ashwin",
       title: "Data Scientist",
       avatar:
         "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
@@ -1682,7 +1682,7 @@ export const courses: Course[] = [
       "https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     instructor: {
       id: "8",
-      name: "Siddharth Mishra",
+      name: "Siddharth",
       title: "Full Stack Developer",
       avatar:
         "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
@@ -1846,7 +1846,7 @@ export const courses: Course[] = [
       "https://images.pexels.com/photos/3862610/pexels-photo-3862610.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     instructor: {
       id: "9",
-      name: "Amit Pradhan",
+      name: "Amit",
       title: "AI Researcher",
       avatar:
         "https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
@@ -2234,7 +2234,7 @@ export const courses: Course[] = [
       "https://media.licdn.com/dms/image/v2/D5612AQGcORBlx5ZU1w/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1698219590639?e=2147483647&v=beta&t=zl6a12g6ZZLeD6-zDQ8XtufNZXoFJCOaNWSYeg5ALTQ",
     instructor: {
       id: "9",
-      name: "Amit Pradhan",
+      name: "Amit",
       title: "AI Researcher",
       avatar:
         "https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
@@ -2687,7 +2687,7 @@ export const courses: Course[] = [
       "https://miro.medium.com/v2/resize:fit:880/1*J99_bZjpDwZyEKFYXlTeUQ.png",
     instructor: {
       id: "9",
-      name: "Amit Pradhan",
+      name: "Amit",
       title: "AI Researcher",
       avatar:
         "https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",

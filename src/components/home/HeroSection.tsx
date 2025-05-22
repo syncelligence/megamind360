@@ -1,9 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Search } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Button from '../common/Button';
+import { courses } from '../../data/courses';
 
 const HeroSection: React.FC = () => {
+  const [searchTerm, setSearchTerm] = useState('');
+  const navigate = useNavigate();
+
+  const handleSearch = (e?: React.FormEvent) => {
+    if (e) e.preventDefault();
+    const term = searchTerm.trim().toLowerCase();
+    if (!term) return;
+    const found = courses.find(course => course.title.toLowerCase() === term || course.title.toLowerCase().includes(term));
+    if (found) {
+      navigate(`/courses/${found.slug}`);
+    } else {
+      alert('No course found with that name.');
+    }
+  };
+
   return (
     <section className="relative pt-20 pb-16 md:pt-32 md:pb-24 overflow-hidden">
       {/* Background with gradient */}
@@ -16,44 +32,30 @@ const HeroSection: React.FC = () => {
       <div className="container-custom relative">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="animate-fade-in-up">
-            <h5 className="text-brand-secondary font-semibold mb-4">Expand Your Knowledge</h5>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-gray-900">
-              Learn Without <span className="text-brand-primary">Limits</span>
-            </h1>
+            <h4 className="text-brand-secondary font-semibold mb-4">From Curiosity to Confidence</h4>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-gray-900">
+              Gain Skills That <span className="text-brand-primary">Make a Difference</span>
+            </h2>
             <p className="text-lg text-gray-600 mb-8 max-w-lg">
-              Discover thousands of courses taught by expert instructors. Take your skills to the next level with Megamind360's comprehensive learning platform.
+              At the intersection of precision and relevance, we offer IT training that translates directly into workplace performance.
             </p>
             
             {/* Search Bar */}
-            <div className="flex flex-col sm:flex-row gap-4 mb-8">
+            <form className="flex flex-col sm:flex-row gap-4 mb-8" onSubmit={handleSearch}>
               <div className="relative flex-grow">
                 <input
                   type="text"
                   placeholder="What do you want to learn today?"
                   className="w-full pl-12 pr-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-primary focus:border-transparent shadow-sm"
+                  value={searchTerm}
+                  onChange={e => setSearchTerm(e.target.value)}
                 />
                 <Search className="absolute left-4 top-3.5 text-gray-400" size={20} />
               </div>
-              <Button size="lg">
+              <Button size="lg" type="submit">
                 Search Courses
               </Button>
-            </div>
-            
-            {/* Stats */}
-            <div className="flex flex-wrap gap-8 mt-8">
-              <div>
-                <p className="text-3xl font-bold text-brand-primary">15K+</p>
-                <p className="text-gray-600">Active Students</p>
-              </div>
-              <div>
-                <p className="text-3xl font-bold text-brand-secondary">250+</p>
-                <p className="text-gray-600">Expert Instructors</p>
-              </div>
-              <div>
-                <p className="text-3xl font-bold text-brand-accent">1.2K+</p>
-                <p className="text-gray-600">Quality Courses</p>
-              </div>
-            </div>
+            </form>
           </div>
           
           <div className="relative animate-fade-in">
@@ -78,7 +80,7 @@ const HeroSection: React.FC = () => {
                 </div>
                 <div>
                   <p className="font-semibold">Excellent Rating</p>
-                  <p className="text-sm text-gray-500">From 10,000+ reviews</p>
+                  <p className="text-sm text-gray-500">From 1000+ reviews</p>
                 </div>
               </div>
             </div>

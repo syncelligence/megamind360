@@ -1,63 +1,42 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Code, Database, Palette, BarChart, Globe, Microscope, BookOpen, Camera } from 'lucide-react';
+import { Code, Cpu, Layers, Server, BrainCog } from 'lucide-react';
 
 const categories = [
   {
     id: 1,
-    name: 'Web Development',
-    icon: <Code size={24} />,
+    name: 'Automation Testing',
+    icon: <Cpu size={28} />,
     color: 'bg-blue-100 text-blue-600',
-    count: 120,
+    count: 40,
   },
   {
     id: 2,
-    name: 'Data Science',
-    icon: <Database size={24} />,
-    color: 'bg-purple-100 text-purple-600',
-    count: 85,
+    name: 'Java Full Stack Development',
+    icon: <Layers size={28} />,
+    color: 'bg-green-100 text-green-600',
+    count: 35,
   },
   {
     id: 3,
-    name: 'Design',
-    icon: <Palette size={24} />,
-    color: 'bg-pink-100 text-pink-600',
-    count: 64,
+    name: 'Web and UI Development',
+    icon: <Code size={28} />,
+    color: 'bg-purple-100 text-purple-600',
+    count: 50,
   },
   {
     id: 4,
-    name: 'Marketing',
-    icon: <BarChart size={24} />,
-    color: 'bg-green-100 text-green-600',
-    count: 75,
+    name: 'DevOPS',
+    icon: <Server size={28} />,
+    color: 'bg-yellow-100 text-yellow-600',
+    count: 28,
   },
   {
     id: 5,
-    name: 'Language',
-    icon: <Globe size={24} />,
-    color: 'bg-yellow-100 text-yellow-600',
-    count: 95,
-  },
-  {
-    id: 6,
-    name: 'Science',
-    icon: <Microscope size={24} />,
-    color: 'bg-indigo-100 text-indigo-600',
+    name: 'Python and AI',
+    icon: <BrainCog size={28} />,
+    color: 'bg-pink-100 text-pink-600',
     count: 45,
-  },
-  {
-    id: 7,
-    name: 'Humanities',
-    icon: <BookOpen size={24} />,
-    color: 'bg-red-100 text-red-600',
-    count: 55,
-  },
-  {
-    id: 8,
-    name: 'Photography',
-    icon: <Camera size={24} />,
-    color: 'bg-teal-100 text-teal-600',
-    count: 38,
   },
 ];
 
@@ -72,24 +51,45 @@ const CategorySection: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5 mt-10">
-          {categories.map((category) => (
-            <Link 
-              key={category.id}
-              to={`/courses?category=${encodeURIComponent(category.name)}`}
-              className="group"
-            >
-              <div className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden transition-all hover:shadow-md p-6 text-center">
-                <div className={`${category.color} w-14 h-14 rounded-lg flex items-center justify-center mx-auto mb-4 transition-transform group-hover:scale-110`}>
-                  {category.icon}
+        <div className="flex flex-col items-center gap-6 mt-10">
+          <div className="flex flex-row gap-6 w-full justify-center">
+            {categories.slice(0, 3).map((category) => (
+              <Link
+                key={category.id}
+                to={`/courses?category=${encodeURIComponent(category.name)}`}
+                className="group flex-1 max-w-xs"
+              >
+                <div className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden transition-all hover:shadow-md p-6 text-center flex flex-col items-center justify-center min-h-[180px] min-w-[180px] h-[180px] w-full">
+                  <div className={`${category.color} w-14 h-14 rounded-lg flex items-center justify-center mb-4 transition-transform group-hover:scale-110`} style={{ minWidth: '56px', minHeight: '56px' }}>
+                    {category.icon}
+                  </div>
+                  <h3 className="font-semibold mb-1 text-gray-900 group-hover:text-brand-primary transition-colors">
+                    {category.name}
+                  </h3>
+                  <p className="text-sm text-gray-500">{category.count} courses</p>
                 </div>
-                <h3 className="font-semibold mb-1 text-gray-900 group-hover:text-brand-primary transition-colors">
-                  {category.name}
-                </h3>
-                <p className="text-sm text-gray-500">{category.count} courses</p>
-              </div>
-            </Link>
-          ))}
+              </Link>
+            ))}
+          </div>
+          <div className="flex flex-row gap-6 w-full justify-center">
+            {categories.slice(3, 5).map((category) => (
+              <Link
+                key={category.id}
+                to={`/courses?category=${encodeURIComponent(category.name)}`}
+                className="group flex-1 max-w-xs"
+              >
+                <div className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden transition-all hover:shadow-md p-6 text-center flex flex-col items-center justify-center min-h-[180px] min-w-[180px] h-[180px] w-full">
+                  <div className={`${category.color} w-14 h-14 rounded-lg flex items-center justify-center mb-4 transition-transform group-hover:scale-110`} style={{ minWidth: '56px', minHeight: '56px' }}>
+                    {category.icon}
+                  </div>
+                  <h3 className="font-semibold mb-1 text-gray-900 group-hover:text-brand-primary transition-colors">
+                    {category.name}
+                  </h3>
+                  <p className="text-sm text-gray-500">{category.count} courses</p>
+                </div>
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
     </section>

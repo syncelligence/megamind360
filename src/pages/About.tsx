@@ -38,7 +38,7 @@ const About: React.FC = () => {
                   <div>
                     <h3 className="text-xl font-bold mb-2 text-gray-900">Our Vision</h3>
                     <p className="text-gray-600">
-                      To create a world where anyone, anywhere has access to high-quality education that empowers them to transform their lives.
+                      At Megamind360, we don't just offer IT training — we build careers through precision-crafted, job-focused learning experiences. Our vision is to bridge the gap between traditional training and real-world readiness, empowering learners to step confidently into the job market with skills that make an immediate impact.
                     </p>
                   </div>
                 </div>
@@ -50,7 +50,7 @@ const About: React.FC = () => {
                   <div>
                     <h3 className="text-xl font-bold mb-2 text-gray-900">Our Mission</h3>
                     <p className="text-gray-600">
-                      To provide accessible, affordable, and engaging educational content created by industry experts, that helps learners develop skills for both personal and professional growth.
+                      Every course at Megamind360 is developed with direct input from industry experts and hiring managers to ensure you're learning what truly matters — not yesterday's concepts, but the tools, technologies, and practices used in real enterprise environments right now. We emphasize quality over quantity, relevance over redundancy, and mastery over memorization. Our commitment is to deliver training that transforms — from hands-on labs and real-time project simulations to interview preparation and job placement support, we are with you every step of the way.
                     </p>
                   </div>
                 </div>
@@ -94,19 +94,19 @@ const About: React.FC = () => {
             
             <div className="space-y-6 text-gray-700">
               <p>
-                Founded in 2020, Megamind360 began with a simple idea: education should be accessible, engaging, and effective. Our founders, a group of educators and technologists, were frustrated with the limitations of traditional education and the inconsistent quality of online learning.
+                Megamind360 was founded in 2019 by three passionate tech professionals who saw a persistent and growing gap between conventional IT training programs and the real-world skills employers expect. With a shared vision to redefine the way IT education is delivered, they set out to create a platform focused not on surface-level awareness, but on deep, hands-on expertise that translates directly into job performance.
               </p>
               
               <p>
-                We started with just a handful of courses in web development and gradually expanded our offerings across multiple disciplines. What set us apart was our focus on quality content and ensuring practical, applicable knowledge transfer.
+                Since then, Megamind360 has trained over 1,500 students, building a vibrant alumni network that continues to thrive across industries and geographies. Our learners consistently stand out—not just for what they know, but for how confidently they apply it in live environments. Every course we design reflects our relentless commitment to relevance, precision, and practical value.
               </p>
               
               <p>
-                Today, Megamind360 hosts over 1,200 courses across dozens of categories, serving students from more than 120 countries. We've built partnerships with leading industry experts and companies to provide cutting-edge curriculum that meets the demands of today's job market.
+                At the heart of Megamind360 is a culture of excellence. We don't settle for "good enough"—our programs are continuously refined to meet the latest industry standards, ensuring our students are not just learning, but mastering skills that matter. From our expert-led sessions and real-time project work to personalized mentoring and career support, we strive to make every learning experience transformative.
               </p>
               
               <p>
-                Despite our growth, our mission remains unchanged: to democratize education and empower learners worldwide to achieve their personal and professional goals.
+                Today, Megamind360 stands as more than a training institute—it's a launchpad for driven individuals who want to build real careers in tech. And we're just getting started.
               </p>
             </div>
           </div>
@@ -114,48 +114,7 @@ const About: React.FC = () => {
       </section>
 
       {/* Team */}
-      <section className="py-16 bg-gray-50">
-        <div className="container-custom">
-          <h2 className="text-3xl font-bold mb-12 text-center text-gray-900">Our Leadership Team</h2>
-          
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              {
-                name: 'Jennifer Liu',
-                position: 'CEO & Co-Founder',
-                image: 'https://images.pexels.com/photos/3184405/pexels-photo-3184405.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-              },
-              {
-                name: 'Marcus Johnson',
-                position: 'CTO',
-                image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-              },
-              {
-                name: 'Sophia Patel',
-                position: 'Chief Content Officer',
-                image: 'https://images.pexels.com/photos/3184397/pexels-photo-3184397.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-              },
-              {
-                name: 'David Rodriguez',
-                position: 'Head of Growth',
-                image: 'https://images.pexels.com/photos/3184611/pexels-photo-3184611.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-              },
-            ].map((member, index) => (
-              <div key={index} className="bg-white rounded-xl overflow-hidden shadow-sm">
-                <img 
-                  src={member.image} 
-                  alt={member.name} 
-                  className="w-full h-64 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-1 text-gray-900">{member.name}</h3>
-                  <p className="text-brand-secondary">{member.position}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* Removed Our Leadership Team section */}
     </div>
   );
 };

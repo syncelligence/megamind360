@@ -94,7 +94,7 @@ const CourseDetails: React.FC = () => {
                   className="w-10 h-10 rounded-full object-cover mr-3"
                 />
                 <div>
-                  <p className="font-medium">Created by</p>
+                  <p className="font-medium">Instructor </p>
                   <Link to={`/instructors/${course.instructor.id}`} className="text-brand-primary hover:underline">
                     {course.instructor.name}
                   </Link>
@@ -104,10 +104,6 @@ const CourseDetails: React.FC = () => {
               <div className="flex flex-wrap gap-3">
                 <Button size="lg" onClick={handleEnrollClick}>
                   Enroll Now
-                </Button>
-                
-                <Button variant="outline" className="border-white text-white hover:bg-white/10">
-                  Try For Free
                 </Button>
               </div>
             </div>
@@ -235,10 +231,6 @@ const CourseDetails: React.FC = () => {
             <div className="bg-white rounded-xl shadow-sm p-6 sticky top-24">
               <Button fullWidth size="lg" className="mb-3" onClick={handleEnrollClick}>
                 Enroll Now
-              </Button>
-              
-              <Button variant="outline" fullWidth className="mb-6">
-                Try For Free
               </Button>
               
               <div className="space-y-4 mb-6">

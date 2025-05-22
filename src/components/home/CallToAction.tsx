@@ -19,22 +19,16 @@ const CallToAction: React.FC = () => {
             Join thousands of students who have already transformed their careers with our comprehensive courses.
           </p>
           
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
+          <div className="flex justify-center">
             <Link to="/courses">
               <Button variant="accent" size="lg">
                 Explore Courses
               </Button>
             </Link>
-            <Link to="/signup">
-              <Button variant="outline" size="lg" className="text-white border-white hover:bg-white/10">
-                Sign Up For Free
-                <ArrowRight size={16} className="ml-2" />
-              </Button>
-            </Link>
           </div>
           
           <p className="mt-6 text-blue-100 text-sm">
-            No credit card required. Start with free access to select courses.
+            Browse our courses and start learning today.
           </p>
         </div>
       </div>
