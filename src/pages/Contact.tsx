@@ -34,9 +34,9 @@ const Contact: React.FC = () => {
                   <div>
                     <h3 className="font-semibold mb-1 text-gray-900">Our Location</h3>
                     <p className="text-gray-600">
-                      123 Learning Street<br />
-                      Education City, 10001<br />
-                      United States
+                      Gagan Avencia, Grant Rd, Near Gera Imperium Alpha, <br />
+                      Rajaram Patil Nagar Vitthal Nagar<br />
+                      Kharadi, Pune, Maharashtra 411014
                     </p>
                   </div>
                 </div>
@@ -51,9 +51,9 @@ const Contact: React.FC = () => {
                       <a href="mailto:info@megamind360.com" className="hover:text-brand-primary transition-colors">
                         info@megamind360.com
                       </a><br />
-                      <a href="mailto:support@megamind360.com" className="hover:text-brand-primary transition-colors">
+                      {/* <a href="mailto:support@megamind360.com" className="hover:text-brand-primary transition-colors">
                         support@megamind360.com
-                      </a>
+                      </a> */}
                     </p>
                   </div>
                 </div>
@@ -66,14 +66,14 @@ const Contact: React.FC = () => {
                     <h3 className="font-semibold mb-1 text-gray-900">Call Us</h3>
                     <p className="text-gray-600">
                       <a href="tel:+11234567890" className="hover:text-brand-primary transition-colors">
-                        +1 (123) 456-7890
+                        +91 9518361649
                       </a><br />
-                      <span className="text-sm text-gray-500">Mon-Fri, 9am-6pm EST</span>
+                      <span className="text-sm text-gray-500">Mon-Fri, 9am-6pm IST</span>
                     </p>
                   </div>
                 </div>
                 
-                <div className="flex items-start">
+                {/* <div className="flex items-start">
                   <div className="p-3 bg-blue-100 text-blue-600 rounded-lg mr-4">
                     <MessageSquare size={24} />
                   </div>
@@ -87,7 +87,7 @@ const Contact: React.FC = () => {
                       </button>
                     </p>
                   </div>
-                </div>
+                </div> */}
               </div>
               
               <div className="bg-gray-50 p-6 rounded-lg">
@@ -96,15 +96,11 @@ const Contact: React.FC = () => {
                   <tbody>
                     <tr>
                       <td className="py-1">Monday - Friday</td>
-                      <td className="py-1">9:00 AM - 6:00 PM EST</td>
+                      <td className="py-1">9:00 AM - 6:00 PM IST</td>
                     </tr>
                     <tr>
-                      <td className="py-1">Saturday</td>
-                      <td className="py-1">10:00 AM - 4:00 PM EST</td>
-                    </tr>
-                    <tr>
-                      <td className="py-1">Sunday</td>
-                      <td className="py-1">Closed</td>
+                      <td className="py-1">Saturday & Sunday</td>
+                      <td className="py-1">10:00 AM - 4:00 PM IST</td>
                     </tr>
                   </tbody>
                 </table>
@@ -217,7 +213,26 @@ const Contact: React.FC = () => {
       </section>
 
       {/* Map */}
-      <section className="py-8 bg-white">
+      {/* Map Section */}
+<section className="py-8 bg-white">
+  <div className="container-custom">
+    <h2 className="text-2xl font-semibold mb-4 text-gray-900">Our Location</h2>
+    <div className="h-96 w-full rounded-xl overflow-hidden shadow-lg">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.403648992018!2d73.9545144!3d18.5577243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c3c16ba9d881%3A0x629a0cce4db3b97a!2sGagan%20Avencia!5e0!3m2!1sen!2sin!4v1700000000000"
+        width="100%"
+        height="100%"
+        style={{ border: 0 }}
+        allowFullScreen
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+        title="Megamind360 Location Map"
+      ></iframe>
+    </div>
+  </div>
+</section>
+
+      {/* <section className="py-8 bg-white">
         <div className="container-custom">
           <div className="h-96 w-full rounded-xl overflow-hidden shadow-lg">
             <iframe
@@ -232,7 +247,7 @@ const Contact: React.FC = () => {
             ></iframe>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* FAQ */}
       <section className="py-16 bg-gray-50">
@@ -241,10 +256,6 @@ const Contact: React.FC = () => {
           
           <div className="max-w-3xl mx-auto space-y-6">
             {[
-              {
-                question: "How do I sign up for a course?",
-                answer: "To sign up for a course, create an account, browse our course catalog, and click \"Enroll\" on the course you want to take. You'll be directed to the payment page to complete your enrollment.",
-              },
               {
                 question: "What payment methods do you accept?",
                 answer: "We accept all major credit cards (Visa, MasterCard, American Express, Discover), PayPal, and Apple Pay. For certain countries, we also offer local payment methods.",

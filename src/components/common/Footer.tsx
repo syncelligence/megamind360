@@ -68,9 +68,9 @@ const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/blog" className="text-gray-400 hover:text-brand-primary transition-colors">
+                {/* <Link to="/blog" className="text-gray-400 hover:text-brand-primary transition-colors">
                   Blog
-                </Link>
+                </Link> */}
               </li>
             </ul>
           </div>
@@ -100,9 +100,9 @@ const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/accessibility" className="text-gray-400 hover:text-brand-primary transition-colors">
+                {/* <Link to="/accessibility" className="text-gray-400 hover:text-brand-primary transition-colors">
                   Accessibility
-                </Link>
+                </Link> */}
               </li>
             </ul>
           </div>
@@ -113,7 +113,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-4">
               <li className="flex items-start space-x-3">
                 <MapPin size={20} className="text-brand-primary flex-shrink-0 mt-1" />
-                <span className="text-gray-400">123 Learning Street, Education City, 10001</span>
+                <span className="text-gray-400">Gagan Avencia, Near Gera Imperium Alpha, Kharadi, Pune 411014</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Mail size={20} className="text-brand-primary flex-shrink-0" />
@@ -124,7 +124,7 @@ const Footer: React.FC = () => {
               <li className="flex items-center space-x-3">
                 <Phone size={20} className="text-brand-primary flex-shrink-0" />
                 <a href="tel:+11234567890" className="text-gray-400 hover:text-brand-primary transition-colors">
-                  +1 (123) 456-7890
+                  +91 9518361649
                 </a>
               </li>
             </ul>
@@ -149,8 +149,8 @@ const Footer: React.FC = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/cookies" className="text-gray-500 hover:text-gray-400 text-sm">
-                    Cookies
+                  <Link to="/faq" className="text-gray-500 hover:text-gray-400 text-sm">
+                    FAQs
                   </Link>
                 </li>
               </ul>
