@@ -57,48 +57,12 @@ const InstructorDetails: React.FC = () => {
                 
                 <div className="flex items-center">
                   <Users className="text-gray-500 mr-1" size={18} />
-                  <span>{instructor.totalStudents.toLocaleString()} students</span>
-                </div>
-                
-                <div className="flex items-center">
-                  <BookOpen className="text-gray-500 mr-1" size={18} />
                   <span>{instructor.totalCourses} courses</span>
                 </div>
               </div>
               
               <div className="flex mt-4 space-x-3">
-                {instructor.social.twitter && (
-                  <a
-                    href={instructor.social.twitter}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-2 bg-white rounded-full shadow-sm hover:shadow-md text-blue-400 transition-all"
-                  >
-                    <Twitter size={18} />
-                  </a>
-                )}
-                
-                {instructor.social.linkedin && (
-                  <a
-                    href={instructor.social.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-2 bg-white rounded-full shadow-sm hover:shadow-md text-blue-700 transition-all"
-                  >
-                    <Linkedin size={18} />
-                  </a>
-                )}
-                
-                {instructor.social.website && (
-                  <a
-                    href={instructor.social.website}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-2 bg-white rounded-full shadow-sm hover:shadow-md text-gray-700 transition-all"
-                  >
-                    <Globe size={18} />
-                  </a>
-                )}
+                {/* Social links removed */}
               </div>
             </div>
           </div>

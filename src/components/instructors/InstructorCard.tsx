@@ -50,15 +50,7 @@ const InstructorCard: React.FC<InstructorCardProps> = ({ instructor }) => {
             <div>
               <div className="flex items-center justify-center space-x-1 mb-1">
                 <Users size={14} className="text-brand-secondary" />
-                <span className="font-semibold">{instructor.totalStudents.toLocaleString()}</span>
-              </div>
-              <p className="text-xs text-gray-500">Students</p>
-            </div>
-            
-            <div>
-              <div className="flex items-center justify-center space-x-1 mb-1">
-                <BookOpen size={14} className="text-brand-accent" />
-                <span className="font-semibold">{instructor.totalCourses}</span>
+                <span className="font-semibold">{instructor.totalCourses.toLocaleString()}</span>
               </div>
               <p className="text-xs text-gray-500">Courses</p>
             </div>

@@ -12,11 +12,10 @@ export const courses: Course[] = [
     thumbnail:
       "https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     instructor: {
-      id: "7",
+      id: "1",
       name: "Ashwin",
       title: "Data Scientist",
-      avatar:
-        "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      avatar: "https://avatar.iran.liara.run/public/16",
       bio: "Data scientist with expertise in machine learning, data analytics, and predictive modeling. Passionate about transforming raw data into actionable insights.",
       expertise: ["Machine Learning", "Data Analytics", "Python"],
       rating: 4.7,
@@ -36,70 +35,948 @@ export const courses: Course[] = [
     featured: true,
     topics: ["HTML", "CSS", "JavaScript", "React", "Node.js", "MongoDB"],
     teachingMode: "Online/In-Person/Hybrid",
-    curriculum: [
-      {
-        id: "m1",
-        title: "Introduction to Web Development",
-        duration: "2 weeks",
-        lessons: [
-          {
-            id: "l1",
-            title: "How the Web Works",
-            duration: "30 mins",
-            type: "Video",
-          },
-          {
-            id: "l2",
-            title: "Setting Up Your Development Environment",
-            duration: "45 mins",
-            type: "Video",
-          },
-          {
-            id: "l3",
-            title: "Introduction to HTML",
-            duration: "1 hour",
-            type: "Video",
-          },
-          {
-            id: "l4",
-            title: "HTML Basics Quiz",
-            duration: "20 mins",
-            type: "Quiz",
-          },
-        ],
-      },
-      {
-        id: "m2",
-        title: "CSS Fundamentals",
-        duration: "2 weeks",
-        lessons: [
-          {
-            id: "l5",
-            title: "Introduction to CSS",
-            duration: "40 mins",
-            type: "Video",
-          },
-          {
-            id: "l6",
-            title: "CSS Box Model",
-            duration: "35 mins",
-            type: "Video",
-          },
-          {
-            id: "l7",
-            title: "Flexbox & Grid",
-            duration: "55 mins",
-            type: "Video",
-          },
-          {
-            id: "l8",
-            title: "Build Your First Webpage",
-            duration: "1 hour",
-            type: "Assignment",
-          },
-        ],
-      },
-    ],
+  "curriculum": [
+    {
+      "id": "m1",
+      "title": "Fundamentals of HTML",
+      "duration": "3 days",
+      "lessons": [
+        {
+          "id": "l1",
+          "title": "Introduction to HTML",
+          "duration": "40 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l2",
+          "title": "Basic Structure of an HTML Document",
+          "duration": "45 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l3",
+          "title": "Common Tags: Headings, Paragraphs, Links, Images, Lists",
+          "duration": "50 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l4",
+          "title": "Form Elements and Attributes",
+          "duration": "45 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l5",
+          "title": "Input Types and Validation",
+          "duration": "40 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l6",
+          "title": "Semantic HTML Tags: Header, Nav, Section, Article, Footer",
+          "duration": "45 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l7",
+          "title": "Project: First Landing Page with HTML",
+          "duration": "1 hour",
+          "type": "Assignment"
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Getting Started with CSS & GitHub",
+      "duration": "3 days",
+      "lessons": [
+        {
+          "id": "l8",
+          "title": "Inline, Internal, and External CSS",
+          "duration": "45 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l9",
+          "title": "Basic Selectors and Properties: Color, Background, Font, Text Alignment",
+          "duration": "50 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l10",
+          "title": "Box Model: Margin, Border, Padding, Content",
+          "duration": "45 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l11",
+          "title": "Positioning: Static, Relative, Absolute, Fixed",
+          "duration": "40 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l12",
+          "title": "Flexbox Basics",
+          "duration": "45 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l13",
+          "title": "Introduction to Git & GitHub and Its Setup",
+          "duration": "50 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l14",
+          "title": "Project: Creating a Simple Layout with CSS",
+          "duration": "1 hour",
+          "type": "Assignment"
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "JavaScript Essentials",
+      "duration": "3 days",
+      "lessons": [
+        {
+          "id": "l15",
+          "title": "Variables, Data Types, and Operators",
+          "duration": "45 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l16",
+          "title": "Basic Syntax and Control Structures: If Statements, Loops",
+          "duration": "50 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l17",
+          "title": "Introduction to Functions",
+          "duration": "40 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l18",
+          "title": "Let, Var, and Const",
+          "duration": "40 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l19",
+          "title": "Hoisting and Scopes",
+          "duration": "45 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l20",
+          "title": "Closures",
+          "duration": "45 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l21",
+          "title": "Introduction to Higher-Order Functions (HOF)",
+          "duration": "40 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l22",
+          "title": "DOM Manipulation: getElementById, querySelector",
+          "duration": "50 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l23",
+          "title": "Event Handling: Click, Hover, etc.",
+          "duration": "45 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l24",
+          "title": "Event Bubbling and Capturing",
+          "duration": "40 mins",
+          "type": "Video"
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Advanced Concepts of JavaScript",
+      "duration": "3 days",
+      "lessons": [
+        {
+          "id": "l25",
+          "title": "Arrow Functions",
+          "duration": "40 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l26",
+          "title": "Destructuring Arrays and Objects",
+          "duration": "45 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l27",
+          "title": "Working with Arrays: Push, Pop, Map, Filter",
+          "duration": "50 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l28",
+          "title": "Objects and Their Properties",
+          "duration": "45 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l29",
+          "title": "Asynchronous JavaScript: Callbacks, Promises, Async/Await",
+          "duration": "50 mins",
+          "type": "Video"
+        }
+      ]
+    },
+    {
+      "id": "m5",
+      "title": "Introduction to React and JSX",
+      "duration": "3 days",
+      "lessons": [
+        {
+          "id": "l30",
+          "title": "What is React and Why Use It",
+          "duration": "40 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l31",
+          "title": "Setting Up a React Environment with Create React App",
+          "duration": "45 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l32",
+          "title": "Installing Bundlers",
+          "duration": "40 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l33",
+          "title": "React.createElement and Render Method",
+          "duration": "45 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l34",
+          "title": "Introduction to JSX",
+          "duration": "40 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l35",
+          "title": "Tailwind CSS",
+          "duration": "45 mins",
+          "type": "Video"
+        }
+      ]
+    },
+    {
+      "id": "m6",
+      "title": "Components, Props, and State",
+      "duration": "3 days",
+      "lessons": [
+        {
+          "id": "l36",
+          "title": "Creating and Rendering Components",
+          "duration": "45 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l37",
+          "title": "Creating Different Components",
+          "duration": "40 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l38",
+          "title": "Understanding Props",
+          "duration": "45 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l39",
+          "title": "Creating Cards with Props",
+          "duration": "40 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l40",
+          "title": "React Reconciliation and React Fibers",
+          "duration": "50 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l41",
+          "title": "Understanding Keys in React",
+          "duration": "40 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l42",
+          "title": "Understanding the useState Hook",
+          "duration": "45 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l43",
+          "title": "Project: Creating a Simple React Project",
+          "duration": "1 hour",
+          "type": "Assignment"
+        }
+      ]
+    },
+    {
+      "id": "m7",
+      "title": "Advanced Hooks and State Management",
+      "duration": "3 days",
+      "lessons": [
+        {
+          "id": "l44",
+          "title": "Understanding the useEffect Hook",
+          "duration": "45 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l45",
+          "title": "Clean-up Function of useEffect",
+          "duration": "40 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l46",
+          "title": "Custom Hooks",
+          "duration": "45 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l47",
+          "title": "State Lifting",
+          "duration": "40 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l48",
+          "title": "Context API",
+          "duration": "50 mins",
+          "type": "Video"
+        }
+      ]
+    },
+    {
+      "id": "m8",
+      "title": "UI Functionalities and React-Routing",
+      "duration": "3 days",
+      "lessons": [
+        {
+          "id": "l49",
+          "title": "Introduction to React Router DOM",
+          "duration": "45 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l50",
+          "title": "Creating Different Paths",
+          "duration": "40 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l51",
+          "title": "Creating an Error Page Using useRouteError Hook",
+          "duration": "45 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l52",
+          "title": "Creating Children Routes",
+          "duration": "40 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l53",
+          "title": "Types of Routing: SSR vs CSR",
+          "duration": "45 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l54",
+          "title": "Single Page Application and Dynamic Routing",
+          "duration": "50 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l55",
+          "title": "Using useParams Hook",
+          "duration": "40 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l56",
+          "title": "Applying Event Handlers",
+          "duration": "45 mins",
+          "type": "Video"
+        }
+      ]
+    },
+    {
+      "id": "m9",
+      "title": "Getting Started with CSS Frameworks",
+      "duration": "3 days",
+      "lessons": [
+        {
+          "id": "l57",
+          "title": "Introduction to Bootstrap/Tailwind",
+          "duration": "45 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l58",
+          "title": "Setting Up Bootstrap/Tailwind",
+          "duration": "40 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l59",
+          "title": "Grid System and Responsive Design",
+          "duration": "50 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l60",
+          "title": "Commonly Used Classes: Buttons, Cards, Alerts",
+          "duration": "45 mins",
+          "type": "Video"
+        }
+      ]
+    },
+    {
+      "id": "m10",
+      "title": "Advanced React Concepts",
+      "duration": "3 days",
+      "lessons": [
+        {
+          "id": "l61",
+          "title": "Higher-Order Components",
+          "duration": "45 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l62",
+          "title": "Lazy Loading (On-Demand Loading)",
+          "duration": "40 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l63",
+          "title": "Controlled vs Uncontrolled Components",
+          "duration": "45 mins",
+          "type": "Video"
+        }
+      ]
+    },
+    {
+      "id": "m11",
+      "title": "Class Components",
+      "duration": "3 days",
+      "lessons": [
+        {
+          "id": "l64",
+          "title": "Creating Class-Based Components",
+          "duration": "45 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l65",
+          "title": "States in Class Components",
+          "duration": "40 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l66",
+          "title": "Lifecycle Methods of React",
+          "duration": "50 mins",
+          "type": "Video"
+        }
+      ]
+    },
+    {
+      "id": "m12",
+      "title": "Performance Optimization",
+      "duration": "3 days",
+      "lessons": [
+        {
+          "id": "l67",
+          "title": "Error Boundaries",
+          "duration": "45 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l68",
+          "title": "Fragments and StrictMode",
+          "duration": "40 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l69",
+          "title": "Performance Optimization with React.memo and useCallback",
+          "duration": "50 mins",
+          "type": "Video"
+        }
+      ]
+    },
+    {
+      "id": "m13",
+      "title": "Introduction to Redux",
+      "duration": "3 days",
+      "lessons": [
+        {
+          "id": "l70",
+          "title": "What is Redux and Why Use It",
+          "duration": "40 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l71",
+          "title": "Setting Up Redux",
+          "duration": "45 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l72",
+          "title": "Actions, Reducers, and the Store",
+          "duration": "50 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l73",
+          "title": "Connecting Redux with React Components",
+          "duration": "45 mins",
+          "type": "Video"
+        }
+      ]
+    },
+    {
+      "id": "m14",
+      "title": "Advanced Redux",
+      "duration": "4 days",
+      "lessons": [
+        {
+          "id": "l74",
+          "title": "Advanced Redux Concepts: Middleware, Async Actions",
+          "duration": "50 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l75",
+          "title": "Combining Reducers",
+          "duration": "45 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l76",
+          "title": "Project: Integrating Redux into the Recipe App",
+          "duration": "1.5 hours",
+          "type": "Assignment"
+        }
+      ]
+    },
+    {
+      "id": "m15",
+      "title": "Setting Up the E-commerce Website",
+      "duration": "3 days",
+      "lessons": [
+        {
+          "id": "l77",
+          "title": "Planning the Project Structure",
+          "duration": "40 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l78",
+          "title": "Setting Up the Environment with Create React App",
+          "duration": "45 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l79",
+          "title": "Installing Necessary Dependencies: React Router, Redux, Tailwind CSS",
+          "duration": "40 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l80",
+          "title": "Creating the Basic Layout: Header, Footer, Product Listing",
+          "duration": "50 mins",
+          "type": "Video"
+        }
+      ]
+    },
+    {
+      "id": "m16",
+      "title": "Implementing Functionality and Deployment",
+      "duration": "4 days",
+      "lessons": [
+        {
+          "id": "l81",
+          "title": "Adding Product Data and Displaying Products",
+          "duration": "45 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l82",
+          "title": "Implementing Product Details Page",
+          "duration": "40 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l83",
+          "title": "Adding a Shopping Cart with Redux",
+          "duration": "50 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l84",
+          "title": "Deployment of React Front End on Hosting Platforms",
+          "duration": "1 hour",
+          "type": "Assignment"
+        }
+      ]
+    },
+    {
+      "id": "m17",
+      "title": "Node.js Basics and Modules",
+      "duration": "3 days",
+      "lessons": [
+        {
+          "id": "l85",
+          "title": "Introduction to Node.js and Its Architecture",
+          "duration": "45 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l86",
+          "title": "Setting Up Node.js and Creating a Basic Server",
+          "duration": "50 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l87",
+          "title": "Understanding the Node.js Event Loop and Asynchronous Programming",
+          "duration": "45 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l88",
+          "title": "Core Modules and Third-Party Packages",
+          "duration": "40 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l89",
+          "title": "Working with NPM for Package Management",
+          "duration": "45 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l90",
+          "title": "Creating and Managing Custom Modules",
+          "duration": "40 mins",
+          "type": "Video"
+        }
+      ]
+    },
+    {
+      "id": "m18",
+      "title": "Basics of Express.js and RESTful APIs",
+      "duration": "3 days",
+      "lessons": [
+        {
+          "id": "l91",
+          "title": "Setting Up an Express Application",
+          "duration": "45 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l92",
+          "title": "Understanding Routing and Middleware in Express",
+          "duration": "50 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l93",
+          "title": "Creating a Basic RESTful API",
+          "duration": "45 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l94",
+          "title": "CRUD Operations and Data Handling",
+          "duration": "50 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l95",
+          "title": "Implementing Error Handling and Validation",
+          "duration": "45 mins",
+          "type": "Video"
+        }
+      ]
+    },
+    {
+      "id": "m19",
+      "title": "Advanced Express Features",
+      "duration": "3 days",
+      "lessons": [
+        {
+          "id": "l96",
+          "title": "Authentication and Authorization: JWT, OAuth",
+          "duration": "50 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l97",
+          "title": "Advanced Routing Techniques and Error Handling",
+          "duration": "45 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l98",
+          "title": "Integrating Third-Party Services: Payment Gateways",
+          "duration": "45 mins",
+          "type": "Video"
+        }
+      ]
+    },
+    {
+      "id": "m20",
+      "title": "API Design and Documentation",
+      "duration": "3 days",
+      "lessons": [
+        {
+          "id": "l99",
+          "title": "Designing Scalable and Maintainable APIs",
+          "duration": "45 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l100",
+          "title": "Documenting APIs Using Tools Like Swagger",
+          "duration": "40 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l101",
+          "title": "Testing APIs with Postman or Similar Tools",
+          "duration": "45 mins",
+          "type": "Video"
+        }
+      ]
+    },
+    {
+      "id": "m21",
+      "title": "MongoDB Basics",
+      "duration": "3 days",
+      "lessons": [
+        {
+          "id": "l102",
+          "title": "Introduction to NoSQL and MongoDB",
+          "duration": "40 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l103",
+          "title": "Setting Up MongoDB and Using MongoDB Atlas",
+          "duration": "45 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l104",
+          "title": "Basic CRUD Operations and Data Modeling",
+          "duration": "50 mins",
+          "type": "Video"
+        }
+      ]
+    },
+    {
+      "id": "m22",
+      "title": "Advanced MongoDB",
+      "duration": "3 days",
+      "lessons": [
+        {
+          "id": "l105",
+          "title": "Schema Design and Data Relationships",
+          "duration": "45 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l106",
+          "title": "Aggregation Framework and Indexing",
+          "duration": "50 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l107",
+          "title": "Performance Optimization and Data Validation",
+          "duration": "45 mins",
+          "type": "Video"
+        }
+      ]
+    },
+    {
+      "id": "m23",
+      "title": "Authentication and Authorization",
+      "duration": "3 days",
+      "lessons": [
+        {
+          "id": "l108",
+          "title": "Implementing User Authentication: JWT, Passport.js",
+          "duration": "50 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l109",
+          "title": "Managing User Roles and Permissions",
+          "duration": "45 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l110",
+          "title": "Securing APIs and Handling Sessions",
+          "duration": "45 mins",
+          "type": "Video"
+        }
+      ]
+    },
+    {
+      "id": "m24",
+      "title": "CI/CD Pipelines",
+      "duration": "3 days",
+      "lessons": [
+        {
+          "id": "l111",
+          "title": "Introduction to Continuous Integration and Continuous Deployment",
+          "duration": "45 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l112",
+          "title": "Setting Up CI/CD Pipelines Using GitHub Actions",
+          "duration": "50 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l113",
+          "title": "Deploying Applications to Cloud Platforms",
+          "duration": "45 mins",
+          "type": "Video"
+        }
+      ]
+    },
+    {
+      "id": "m25",
+      "title": "Major Project Frontend Setup",
+      "duration": "3 days",
+      "lessons": [
+        {
+          "id": "l114",
+          "title": "Planning and Organizing the Project Structure",
+          "duration": "40 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l115",
+          "title": "Setting Up the Frontend Environment with Create React App",
+          "duration": "45 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l116",
+          "title": "Installing and Configuring Dependencies: React Router, Redux, Tailwind CSS",
+          "duration": "40 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l117",
+          "title": "Building the Basic Layout: Header, Footer, Product Listing",
+          "duration": "50 mins",
+          "type": "Video"
+        }
+      ]
+    },
+    {
+      "id": "m26",
+      "title": "Implementing Functionality for E-commerce Website",
+      "duration": "4 days",
+      "lessons": [
+        {
+          "id": "l118",
+          "title": "Adding and Displaying Product Data",
+          "duration": "45 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l119",
+          "title": "Implementing Product Details and Shopping Cart Functionality with Redux",
+          "duration": "50 mins",
+          "type": "Video"
+        }
+      ]
+    },
+    {
+      "id": "m27",
+      "title": "Backend Integration and Checkout Functionality",
+      "duration": "3 days",
+      "lessons": [
+        {
+          "id": "l120",
+          "title": "Developing Checkout Functionality and Integrating with the Backend",
+          "duration": "50 mins",
+          "type": "Video"
+        }
+      ]
+    },
+    {
+      "id": "m28",
+      "title": "Deployment and Final Touches",
+      "duration": "4 days",
+      "lessons": [
+        {
+          "id": "l121",
+          "title": "Deploying Node.js/Express Backend to Cloud Platforms: Heroku, AWS",
+          "duration": "50 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l122",
+          "title": "Hosting the React Frontend on Platforms: Netlify, Vercel",
+          "duration": "45 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l123",
+          "title": "Configuring Domain Names, SSL Certificates, and Final Deployment Checks",
+          "duration": "40 mins",
+          "type": "Video"
+        },
+        {
+          "id": "l124",
+          "title": "Conducting Final Testing and Performance Optimization",
+          "duration": "1 hour",
+          "type": "Assignment"
+        }
+      ]
+    }
+  ],
   },
   {
     id: "2",
@@ -112,11 +989,10 @@ export const courses: Course[] = [
     thumbnail:
       "https://images.pexels.com/photos/669619/pexels-photo-669619.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     instructor: {
-      id: "11",
+      id: "5",
       name: "Anurodh",
       title: "Cloud Architect",
-      avatar:
-        "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      avatar: "https://avatar.iran.liara.run/public/26",
       bio: "Cloud architect specializing in designing scalable and secure cloud infrastructures. Proficient in AWS, Azure, and Google Cloud.",
       expertise: ["Cloud Architecture", "AWS", "Azure"],
       rating: 4.7,
@@ -218,20 +1094,18 @@ export const courses: Course[] = [
     thumbnail:
       "https://images.pexels.com/photos/196645/pexels-photo-196645.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     instructor: {
-      id: "3",
-      name: "Emma",
-      title: "UX Design Lead",
-      avatar:
-        "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      bio: "Award-winning designer with experience at top tech companies. Passionate about creating intuitive and accessible digital experiences.",
-      expertise: ["UI Design", "User Research", "Figma", "Adobe XD"],
+      id: "1",
+      name: "Ashwin",
+      title: "UI / UX Expert",
+      avatar: "https://avatar.iran.liara.run/public/16",
+      bio: "UI/UX expert with extensive experience in creating intuitive and engaging user interfaces. Specializes in user research, wireframing, and prototyping.",
+      expertise: ["User Research", "Wireframing", "Prototyping"],
       rating: 4.7,
-      totalReviews: 275,
-      totalStudents: 6200,
-      totalCourses: 4,
+      totalReviews: 120,
+      totalCourses: 3,
       social: {
-        twitter: "https://twitter.com/emmarodriguez",
-        linkedin: "https://linkedin.com/in/emmarodriguez",
+        linkedin: "https://linkedin.com",
+        website: "https:google.com",
       },
     },
     duration: "8 weeks",
@@ -314,112 +1188,112 @@ export const courses: Course[] = [
       },
     ],
   },
-  {
-    id: "4",
-    title: "Digital Marketing Fundamentals",
-    slug: "digital-marketing-fundamentals",
-    category: "Marketing",
-    level: "Beginner",
-    description:
-      "Master the fundamentals of digital marketing, including SEO, social media, content marketing, email campaigns, and analytics to grow your online presence.",
-    thumbnail:
-      "https://images.pexels.com/photos/34577/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    instructor: {
-      id: "4",
-      name: "David",
-      title: "Marketing Director",
-      avatar:
-        "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      bio: "Marketing specialist with over 15 years of experience working with Fortune 500 companies and startups alike.",
-      expertise: ["SEO", "Content Marketing", "Social Media", "Analytics"],
-      rating: 4.6,
-      totalReviews: 390,
-      totalStudents: 9500,
-      totalCourses: 6,
-      social: {
-        linkedin: "https://linkedin.com/in/davidwilson",
-        website: "https://davidwilson.com",
-      },
-    },
-    duration: "6 weeks",
-    price: 79.99,
-    rating: 4.5,
-    totalReviews: 760,
-    enrolledStudents: 4120,
-    featured: false,
-    topics: [
-      "SEO",
-      "Social Media Marketing",
-      "Content Strategy",
-      "Email Marketing",
-      "Analytics",
-    ],
-    teachingMode: "Online/In-Person/Hybrid",
-    curriculum: [
-      {
-        id: "m1",
-        title: "Marketing Foundations",
-        duration: "1 week",
-        lessons: [
-          {
-            id: "l1",
-            title: "Introduction to Digital Marketing",
-            duration: "50 mins",
-            type: "Video",
-          },
-          {
-            id: "l2",
-            title: "Building a Marketing Strategy",
-            duration: "60 mins",
-            type: "Video",
-          },
-          {
-            id: "l3",
-            title: "Understanding Your Audience",
-            duration: "45 mins",
-            type: "Video",
-          },
-          {
-            id: "l4",
-            title: "Marketing Fundamentals Quiz",
-            duration: "20 mins",
-            type: "Quiz",
-          },
-        ],
-      },
-      {
-        id: "m2",
-        title: "SEO Basics",
-        duration: "1 week",
-        lessons: [
-          {
-            id: "l5",
-            title: "How Search Engines Work",
-            duration: "40 mins",
-            type: "Video",
-          },
-          {
-            id: "l6",
-            title: "On-Page SEO Techniques",
-            duration: "55 mins",
-            type: "Video",
-          },
-          {
-            id: "l7",
-            title: "Off-Page SEO Strategies",
-            duration: "50 mins",
-            type: "Video",
-          },
-          {
-            id: "l8",
-            title: "SEO Audit Exercise",
-            duration: "1 hour",
-            type: "Assignment",
-          },
-        ],
-      },
-    ],
-  },
+  // {
+  //   id: "4",
+  //   title: "Digital Marketing Fundamentals",
+  //   slug: "digital-marketing-fundamentals",
+  //   category: "Marketing",
+  //   level: "Beginner",
+  //   description:
+  //     "Master the fundamentals of digital marketing, including SEO, social media, content marketing, email campaigns, and analytics to grow your online presence.",
+  //   thumbnail:
+  //     "https://images.pexels.com/photos/34577/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  //   instructor: {
+  //     id: "4",
+  //     name: "David",
+  //     title: "Marketing Director",
+  //     avatar:
+  //       "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  //     bio: "Marketing specialist with over 15 years of experience working with Fortune 500 companies and startups alike.",
+  //     expertise: ["SEO", "Content Marketing", "Social Media", "Analytics"],
+  //     rating: 4.6,
+  //     totalReviews: 390,
+  //     totalStudents: 9500,
+  //     totalCourses: 6,
+  //     social: {
+  //       linkedin: "https://linkedin.com/in/davidwilson",
+  //       website: "https://davidwilson.com",
+  //     },
+  //   },
+  //   duration: "6 weeks",
+  //   price: 79.99,
+  //   rating: 4.5,
+  //   totalReviews: 760,
+  //   enrolledStudents: 4120,
+  //   featured: false,
+  //   topics: [
+  //     "SEO",
+  //     "Social Media Marketing",
+  //     "Content Strategy",
+  //     "Email Marketing",
+  //     "Analytics",
+  //   ],
+  //   teachingMode: "Online/In-Person/Hybrid",
+  //   curriculum: [
+  //     {
+  //       id: "m1",
+  //       title: "Marketing Foundations",
+  //       duration: "1 week",
+  //       lessons: [
+  //         {
+  //           id: "l1",
+  //           title: "Introduction to Digital Marketing",
+  //           duration: "50 mins",
+  //           type: "Video",
+  //         },
+  //         {
+  //           id: "l2",
+  //           title: "Building a Marketing Strategy",
+  //           duration: "60 mins",
+  //           type: "Video",
+  //         },
+  //         {
+  //           id: "l3",
+  //           title: "Understanding Your Audience",
+  //           duration: "45 mins",
+  //           type: "Video",
+  //         },
+  //         {
+  //           id: "l4",
+  //           title: "Marketing Fundamentals Quiz",
+  //           duration: "20 mins",
+  //           type: "Quiz",
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       id: "m2",
+  //       title: "SEO Basics",
+  //       duration: "1 week",
+  //       lessons: [
+  //         {
+  //           id: "l5",
+  //           title: "How Search Engines Work",
+  //           duration: "40 mins",
+  //           type: "Video",
+  //         },
+  //         {
+  //           id: "l6",
+  //           title: "On-Page SEO Techniques",
+  //           duration: "55 mins",
+  //           type: "Video",
+  //         },
+  //         {
+  //           id: "l7",
+  //           title: "Off-Page SEO Strategies",
+  //           duration: "50 mins",
+  //           type: "Video",
+  //         },
+  //         {
+  //           id: "l8",
+  //           title: "SEO Audit Exercise",
+  //           duration: "1 hour",
+  //           type: "Assignment",
+  //         },
+  //       ],
+  //     },
+  //   ],
+  // },
   // React Course
   {
     id: "5",
@@ -432,11 +1306,10 @@ export const courses: Course[] = [
     thumbnail:
       "https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     instructor: {
-      id: "7",
+      id: "1",
       name: "Ashwin",
       title: "Data Scientist",
-      avatar:
-        "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      avatar: "https://avatar.iran.liara.run/public/16",
       bio: "Data scientist with expertise in machine learning, data analytics, and predictive modeling. Passionate about transforming raw data into actionable insights.",
       expertise: ["Machine Learning", "Data Analytics", "Python"],
       rating: 4.7,
@@ -603,11 +1476,10 @@ export const courses: Course[] = [
     thumbnail:
       "https://images.pexels.com/photos/574069/pexels-photo-574069.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     instructor: {
-      id: "7",
+      id: "1",
       name: "Ashwin",
       title: "Data Scientist",
-      avatar:
-        "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      avatar: "https://avatar.iran.liara.run/public/16",
       bio: "Data scientist with expertise in machine learning, data analytics, and predictive modeling. Passionate about transforming raw data into actionable insights.",
       expertise: ["Machine Learning", "Data Analytics", "Python"],
       rating: 4.7,
@@ -708,11 +1580,10 @@ export const courses: Course[] = [
     thumbnail:
       "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     instructor: {
-      id: "7",
+      id: "1",
       name: "Ashwin",
       title: "Data Scientist",
-      avatar:
-        "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      avatar: "https://avatar.iran.liara.run/public/16",
       bio: "Data scientist with expertise in machine learning, data analytics, and predictive modeling. Passionate about transforming raw data into actionable insights.",
       expertise: ["Machine Learning", "Data Analytics", "Python"],
       rating: 4.7,
@@ -1025,11 +1896,10 @@ export const courses: Course[] = [
     thumbnail:
       "https://images.pexels.com/photos/7988079/pexels-photo-7988079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     instructor: {
-      id: "10",
+      id: "4",
       name: "Harshal",
       title: "Blockchain Developer",
-      avatar:
-        "https://images.pexels.com/photos/3748221/pexels-photo-3748221.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      avatar: "https://avatar.iran.liara.run/public/13",
       bio: "Blockchain developer with a focus on smart contracts, decentralized applications, and cryptocurrency solutions. Expert in Solidity and Ethereum.",
       expertise: ["Blockchain", "Smart Contracts", "Solidity"],
       rating: 4.8,
@@ -1196,11 +2066,10 @@ export const courses: Course[] = [
     thumbnail:
       "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     instructor: {
-      id: "11",
+      id: "5",
       name: "Anurodh",
       title: "Cloud Architect",
-      avatar:
-        "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      avatar: "https://avatar.iran.liara.run/public/26",
       bio: "Cloud architect specializing in designing scalable and secure cloud infrastructures. Proficient in AWS, Azure, and Google Cloud.",
       expertise: ["Cloud Architecture", "AWS", "Azure"],
       rating: 4.7,
@@ -1681,11 +2550,10 @@ export const courses: Course[] = [
     thumbnail:
       "https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     instructor: {
-      id: "8",
+      id: "2",
       name: "Siddharth",
       title: "Full Stack Developer",
-      avatar:
-        "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      avatar: "https://avatar.iran.liara.run/public/37",
       bio: "Experienced full stack developer specializing in web development, cloud computing, and DevOps. Proficient in JavaScript, Node.js, and AWS.",
       expertise: ["Web Development", "DevOps", "Cloud Computing"],
       rating: 4.9,
@@ -1845,11 +2713,10 @@ export const courses: Course[] = [
     thumbnail:
       "https://images.pexels.com/photos/3862610/pexels-photo-3862610.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     instructor: {
-      id: "9",
+      id: "3",
       name: "Amit",
       title: "AI Researcher",
-      avatar:
-        "https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      avatar: "https://avatar.iran.liara.run/public/38",
       bio: "AI researcher focused on natural language processing, deep learning, and generative AI. Published multiple papers in top-tier AI conferences.",
       expertise: [
         "Natural Language Processing",
@@ -2233,11 +3100,10 @@ export const courses: Course[] = [
     thumbnail:
       "https://media.licdn.com/dms/image/v2/D5612AQGcORBlx5ZU1w/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1698219590639?e=2147483647&v=beta&t=zl6a12g6ZZLeD6-zDQ8XtufNZXoFJCOaNWSYeg5ALTQ",
     instructor: {
-      id: "9",
+      id: "3",
       name: "Amit",
       title: "AI Researcher",
-      avatar:
-        "https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      avatar: "https://avatar.iran.liara.run/public/38",
       bio: "AI researcher focused on natural language processing, deep learning, and generative AI. Published multiple papers in top-tier AI conferences.",
       expertise: [
         "Natural Language Processing",
@@ -2686,11 +3552,10 @@ export const courses: Course[] = [
     thumbnail:
       "https://miro.medium.com/v2/resize:fit:880/1*J99_bZjpDwZyEKFYXlTeUQ.png",
     instructor: {
-      id: "9",
+      id: "3",
       name: "Amit",
       title: "AI Researcher",
-      avatar:
-        "https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      avatar: "https://avatar.iran.liara.run/public/38",
       bio: "AI researcher focused on natural language processing, deep learning, and generative AI. Published multiple papers in top-tier AI conferences.",
       expertise: [
         "Natural Language Processing",
@@ -3034,14 +3899,17 @@ export const getCoursesByCategory = (category: string): Course[] => {
 
 export const getCourseBySlug = (slug: string): Course | undefined => {
   const course = courses.find((course) => course.slug === slug);
-  
+
   // Set default teaching mode if not specified
   if (course && !course.teachingMode) {
     // Randomly assign a teaching mode to provide variety
-    const modes = ['Online', 'In-Person', 'Hybrid'];
+    const modes = ["Online", "In-Person", "Hybrid"];
     const randomIndex = Math.floor(Math.random() * modes.length);
-    course.teachingMode = modes[randomIndex] as 'Online' | 'In-Person' | 'Hybrid';
+    course.teachingMode = modes[randomIndex] as
+      | "Online"
+      | "In-Person"
+      | "Hybrid";
   }
-  
+
   return course;
 };
