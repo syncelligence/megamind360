@@ -80,11 +80,6 @@ const Footer: React.FC = () => {
             <h5 className="font-bold text-lg mb-6 text-white">Support</h5>
             <ul className="space-y-3">
               <li>
-                <Link to="/help" className="text-gray-400 hover:text-brand-primary transition-colors">
-                  Help Center
-                </Link>
-              </li>
-              <li>
                 <Link to="/faq" className="text-gray-400 hover:text-brand-primary transition-colors">
                   FAQs
                 </Link>

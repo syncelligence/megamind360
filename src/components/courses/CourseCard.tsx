@@ -29,7 +29,6 @@ const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
         <div className="flex items-center space-x-1 mb-3">
           <Star size={16} className="text-yellow-400 fill-current" />
           <span className="text-sm font-semibold">{course.rating}</span>
-          <span className="text-xs text-gray-500">({course.totalReviews})</span>
         </div>
         
         <Link to={`/courses/${course.slug}`}>
@@ -57,11 +56,6 @@ const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
           <div className="flex items-center text-gray-500 text-sm">
             <Clock size={14} className="mr-1" />
             {course.duration}
-          </div>
-          
-          <div className="flex items-center text-gray-500 text-sm">
-            <Users size={14} className="mr-1" />
-            {course.enrolledStudents}
           </div>
         </div>
       </div>

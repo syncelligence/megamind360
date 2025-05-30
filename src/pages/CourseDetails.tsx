@@ -68,19 +68,11 @@ const CourseDetails: React.FC = () => {
                 <div className="flex items-center">
                   <Star className="text-yellow-400 fill-current mr-1" size={18} />
                   <span className="font-semibold mr-1">{course.rating}</span>
-                  <span className="text-gray-400">({course.totalReviews} reviews)</span>
                 </div>
-                
-                <div className="flex items-center">
-                  <Users className="text-gray-400 mr-1" size={18} />
-                  <span>{course.enrolledStudents.toLocaleString()} students</span>
-                </div>
-                
                 <div className="flex items-center">
                   <Clock className="text-gray-400 mr-1" size={18} />
                   <span>{course.duration}</span>
                 </div>
-                
                 <div className="flex items-center">
                   <BarChart2 className="text-gray-400 mr-1" size={18} />
                   <span>{course.level}</span>

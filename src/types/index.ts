@@ -10,8 +10,6 @@ export interface Course {
   duration: string;
   price: number;
   rating: number;
-  totalReviews: number;
-  enrolledStudents: number;
   featured: boolean;
   topics: string[];
   curriculum: Module[];
@@ -43,13 +41,7 @@ export interface Instructor {
   expertise: string[];
   rating: number;
   totalReviews: number;
-  totalStudents: number;
   totalCourses: number;
-  social: {
-    twitter?: string;
-    linkedin?: string;
-    website?: string;
-  };
 }
 
 export interface Review {
