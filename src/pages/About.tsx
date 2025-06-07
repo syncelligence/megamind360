@@ -3,10 +3,10 @@ import { Award, Users, BookOpen, Globe, Target, TrendingUp } from 'lucide-react'
 
 const About: React.FC = () => {
   const stats = [
-    { icon: <Users className="text-brand-primary" size={24} />, value: '15,000+', label: 'Active Students' },
-    { icon: <BookOpen className="text-brand-secondary" size={24} />, value: '1,200+', label: 'Quality Courses' },
-    { icon: <Award className="text-brand-accent" size={24} />, value: '250+', label: 'Expert Instructors' },
-    { icon: <Globe className="text-blue-500" size={24} />, value: '120+', label: 'Countries Reached' },
+    { icon: <Users className="text-brand-primary" size={24} />, value: '1000+', label: 'Active Students' },
+    { icon: <BookOpen className="text-brand-secondary" size={24} />, value: '12+', label: 'Quality Courses' },
+    { icon: <Award className="text-brand-accent" size={24} />, value: '5+', label: 'Expert Instructors' },
+    { icon: <Globe className="text-blue-500" size={24} />, value: '30+', label: 'Countries Reached' },
   ];
 
   return (
